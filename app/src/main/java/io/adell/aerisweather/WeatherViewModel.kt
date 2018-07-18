@@ -8,7 +8,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 
 class WeatherViewModel : ViewModel() {
-    private var forecastEvent = SingleLiveEvent<List<Period>>()
+    var forecastEvent = SingleLiveEvent<List<Period>>()
     private var viewInstructions = SingleLiveEvent<ViewInstruction>()
 
 

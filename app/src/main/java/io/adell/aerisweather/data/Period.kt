@@ -6,28 +6,32 @@ import com.google.gson.annotations.SerializedName
 class Period(
         @SerializedName("timestamp")
         @Expose
-        private var timestamp: Int,
+        var timestamp: Int,
         @SerializedName("validTime")
         @Expose
-        private var validTime: String,
+        var validTime: String,
         @SerializedName("dateTimeISO")
         @Expose
-        private var dateTimeISO: String,
+        var dateTimeISO: String,
         @SerializedName("maxTempC")
         @Expose
-        private var maxTempC: Int,
+        var maxTempC: Int,
         @SerializedName("maxTempF")
         @Expose
-        private var maxTempF: Int,
+        var maxTempF: Int,
         @SerializedName("minTempC")
         @Expose
-        private var minTempC: Int,
+        var minTempC: Int,
         @SerializedName("minTempF")
         @Expose
-        private var minTempF: Int,
+        var minTempF: Int,
         @SerializedName("avgTempC")
         @Expose
-        private var avgTempC: Int,
+        var avgTempC: Int,
         @SerializedName("avgTempF")
         @Expose
-        private var avgTempF: Int)
+        var avgTempF: Int,
+        @SerializedName("icon")
+        @Expose
+        var icon: String)
+
